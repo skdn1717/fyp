@@ -1,0 +1,19 @@
+
+.topbar {
+  grid-area: topbar;
+  border-radius: 17px 17px 0 0;
+  border: 1px solid rgba(208, 208, 208, 1);
+  background-color: #4a4a4a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px 31px;
+  white-space: nowrap;
+}
+/* 
+@media (max-width: 991px) {
+  .topbar {
+    white-space: initial;
+    padding: 0 20px;
+  }
+} */

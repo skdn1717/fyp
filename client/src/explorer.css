@@ -1,0 +1,170 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .column {
+    width: 100%;
+  }
+}
+.div {
+  border-radius: 0px 0px 0px 17px;
+  border-color: rgba(208, 208, 208, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #4a4a4a;
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 15px 0 80px;
+}
+@media (max-width: 991px) {
+  .div {
+    margin-top: 30px;
+    white-space: initial;
+  }
+}
+.div-1 {
+  font-family: Inter, sans-serif;
+  margin-left: 16px;
+}
+@media (max-width: 991px) {
+  .div-1 {
+    margin-left: 10px;
+  }
+}
+.div-2 {
+  border-color: rgba(208, 208, 208, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #d0d0d0;
+  align-self: stretch;
+  margin-top: 10px;
+  height: 1px;
+}
+.div-3 {
+  display: flex;
+  gap: 8px;
+  margin: 35px 0 0 47px;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    margin-left: 10px;
+    white-space: initial;
+  }
+}
+.div-4 {
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+}
+.div-5 {
+  font-family: Inter, sans-serif;
+}
+.sign-up, .login, .get-all, .get-one, .add-post, .edit-post {
+  font-family: Inter, sans-serif;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.div-6 {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 0 47px;
+}
+@media (max-width: 991px) {
+  .div-6 {
+    margin-left: 10px;
+    white-space: initial;
+  }
+}
+.div-7 {
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+}
+.div-8 {
+  font-family: Inter, sans-serif;
+}
+.div-9 {
+  display: flex;
+  gap: 8px;
+  margin: 9px 0 0 47px;
+}
+@media (max-width: 991px) {
+  .div-9 {
+    margin-left: 10px;
+    white-space: initial;
+  }
+}
+.div-10 {
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+}
+.div-11 {
+  font-family: Inter, sans-serif;
+}
+
+
+
+
+/* .explorer {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0px;
+  /* grid-area: sidebar; Ensure it matches the grid area name */
+/* }
+@media (max-width: 991px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.div {
+  border-radius: 17px 0 0 17px;
+  border: 1px solid rgba(208, 208, 208, 1);
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 480px;
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 51px 0 80px;
+}
+
+.div-2 {
+  font-family: Inter, sans-serif;
+  margin-left: 16px;
+}
+
+.div-3 {
+  border: 1px solid rgba(208, 208, 208, 1);
+  background-color: #d0d0d0;
+  align-self: stretch;
+  min-height: 1px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.img {
+  aspect-ratio: 1.02;
+  object-fit: auto;
+  object-position: center;
+  width: 54px;
+  margin: 31px 0 0 46px;
+} */ 
