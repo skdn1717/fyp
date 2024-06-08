@@ -133,8 +133,10 @@
   font-weight: 400;
   white-space: nowrap;
   justify-content: center;
-  padding: 5px 15px;
+  padding: 5px 10px;
   cursor: pointer;
+  width: 100px;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .div-27 {
@@ -176,6 +178,7 @@
   flex-grow: 1;
   width: 500px;
   padding: 5px 11px;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .div-30 {
@@ -234,27 +237,6 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-}
-.dropdown-menu-path {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #3c3a3a;
-  border: 1px solid rgba(208, 208, 208, 1);
-  border-radius: 0 0 5px 5px;
-  width: 100%;
-  margin-top: 5px;
-  z-index: 1000; /* Ensure it appears above other elements */
-}
-
-.dropdown-item {
-  padding: 10px;
-  cursor: pointer;
-  color: white;
-}
-
-.dropdown-item:hover {
-  background-color: rgba(208, 208, 208, 0.2);
 }
 
 /* .route {

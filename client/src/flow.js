@@ -67,19 +67,24 @@ function Flow() {
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1fcfa47ae4c71a71bd9eb656168e957868fa01e334114bdb862d484c675d2ae?apiKey=c88477001710423a80b4a3ad8ecfeb73&"
                         className="img-6"
                       />
-                          {/* {dropdownVisible && (
-              <div className="dropdown-menu">
-              </div>
-            )} */}
 
                     </div>
                     <div className="div-56">
-                      <div className="div-57">Add Step</div>
+                      <div className="div-57">Add Step
                       <img
                         loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1fcfa47ae4c71a71bd9eb656168e957868fa01e334114bdb862d484c675d2ae?apiKey=c88477001710423a80b4a3ad8ecfeb73&"
                         className="img-7"
+                        onClick={toggleDropdown}
                       />
+                      {dropdownVisible && (
+                          <div className="dropdown-menu-path">
+                            <div className="dropdown-item">step1</div>
+                            <div className="dropdown-item">step2</div>
+                            <div className="dropdown-item">step3</div>
+                          </div>
+                      )}
+                      </div>
                     </div>
                     <div className="div-58">End</div>
                   </div>

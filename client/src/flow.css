@@ -308,12 +308,14 @@
 }
 .div-57 {
   font-family: Inter, sans-serif;
+  position: relative;
 }
 .img-7 {
   aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
   width: 11px;
+  margin-left: 10px;
   align-self: start;
   cursor: pointer;
 }
@@ -327,6 +329,27 @@
     max-width: 100%;
     margin-bottom: 40px;
   }
+}
+.dropdown-menu-path {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3c3a3a;
+  border: 1px solid rgba(208, 208, 208, 1);
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  margin-top: 5px;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(208, 208, 208, 0.2);
 }
 
 /* .flow {

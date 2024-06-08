@@ -2,46 +2,46 @@ import React, {useState} from "react";
 import './route.css';
 
 function RouteSet() {
-  const [path, setPath] = useState("/");
-  const [description, setDescription] = useState("Get all users");
-  const [isEditingPath, setIsEditingPath] = useState(false);
-  const [isEditingDescription, setIsEditingDescription] = useState(false);
-  const [dropdownVisible, setDropdownVisible] = useState(false);
+  // const [path, setPath] = useState("/");
+  // const [description, setDescription] = useState("Get all users");
+  // const [isEditingPath, setIsEditingPath] = useState(false);
+  // const [isEditingDescription, setIsEditingDescription] = useState(false);
+  // const [dropdownVisible, setDropdownVisible] = useState(false);
 
-  const handlePathClick = () => {
-    setIsEditingPath(true);
-  };
+  // const handlePathClick = () => {
+  //   setIsEditingPath(true);
+  // };
 
-  const handlePathBlur = (event) => {
-    setIsEditingPath(false);
-    setPath(event.target.textContent);
-  };
+  // const handlePathBlur = (event) => {
+  //   setIsEditingPath(false);
+  //   setPath(event.target.textContent);
+  // };
 
-  const handlePathKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      setIsEditingPath(false);
-      setPath(event.target.textContent);
-    }
-  };
+  // const handlePathKeyDown = (event) => {
+  //   if (event.key === 'Enter') {
+  //     setIsEditingPath(false);
+  //     setPath(event.target.textContent);
+  //   }
+  // };
 
-  const handleDescriptionClick = () => {
-    setIsEditingDescription(true);
-  };
+  // const handleDescriptionClick = () => {
+  //   setIsEditingDescription(true);
+  // };
 
-  const handleDescriptionBlur = (event) => {
-    setIsEditingDescription(false);
-    setDescription(event.target.textContent);
-  };
+  // const handleDescriptionBlur = (event) => {
+  //   setIsEditingDescription(false);
+  //   setDescription(event.target.textContent);
+  // };
 
-  const handleDescriptionKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      setIsEditingDescription(false);
-      setDescription(event.target.textContent);
-    }
-  };
-  const toggleDropdown = () => {
-    setDropdownVisible(!dropdownVisible);
-  };
+  // const handleDescriptionKeyDown = (event) => {
+  //   if (event.key === 'Enter') {
+  //     setIsEditingDescription(false);
+  //     setDescription(event.target.textContent);
+  //   }
+  // };
+  // const toggleDropdown = () => {
+  //   setDropdownVisible(!dropdownVisible);
+  // };
   return (
     <div className="route">
       <div className="div-17">
@@ -61,30 +61,17 @@ function RouteSet() {
                       <div className="div-24">DB</div>
                       <div className="div-25">Mongo DB</div>
                       <div className="div-26">URI</div>
-                      <div className="div-27">mongouriexample..</div>
+                      <div className="div-27" contentEditable="true">mongouriexample..</div>
                     </div>
                   </div>
                   <div className="div-28">
                     <div className="div-29">Path</div>
-                     <div className={`div-30 ${isEditingPath ? 'editable' : ''}`}
-                      onClick={handlePathClick}
-                      onBlur={handlePathBlur}
-                      onKeyDown={handlePathKeyDown}
-                      contentEditable={isEditingPath}
-                      suppressContentEditableWarning={true} // Suppress React warning
-                    >
-                      {path}
+                     <div className="div-30" contentEditable="true">/
                     </div>
                   </div>
                   <div className="div-31">
                     <div className="div-32">Description</div>
-                    <div className={`div-33 ${isEditingDescription ? 'editable' : ''}`}
-            onClick={handleDescriptionClick}
-            onBlur={handleDescriptionBlur}
-            onKeyDown={handleDescriptionKeyDown}
-            contentEditable={isEditingDescription}
-            suppressContentEditableWarning={true}>
-            {description}
+                    <div className="div-33" contentEditable="true">Get all users
                     </div>
                   </div>
                   </div>
