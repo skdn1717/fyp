@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: start;
     font-weight: 700;
+    height: 100vh;
     padding: 14px 80px 80px 28px;
 }
 
@@ -19,6 +20,21 @@
     margin-top: 40px;
     padding: 0 20px;
   }
+}
+
+.textArea{
+  font-family: Inter, sans-serif;
+  background-color:  #2b2929;
+  align-items: start;
+  font-weight: 400;
+  font-size:14px;
+  justify-content: center;
+  flex-grow: 1;
+  width: 540px;
+  padding: 5px 11px;
+  color: white;
+  outline: none;
+  margin: 5px 0;
 }
 
 .div-35 {

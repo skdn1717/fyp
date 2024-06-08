@@ -4,8 +4,9 @@ import './flow.css';
 function Flow() {
   return (
     <div className="flow">
-      <div className="div-35">Start</div>
-                    <div className="div-36">
+      <div className="textArea" contentEditable="true"></div>
+      {/* <div className="div-35">Start</div> */}
+                    {/* <div className="div-36">
                       <div className="div-37">
                         <div className="div-38">var</div>
                         <img
@@ -70,7 +71,7 @@ function Flow() {
                         className="img-7"
                       />
                     </div>
-                    <div className="div-58">End</div>
+                    <div className="div-58">End</div> */}
                   </div>
   );
 }
