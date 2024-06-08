@@ -8,7 +8,7 @@ function RouteSet() {
   const [isEditingDescription, setIsEditingDescription] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
-  const handlePathDoubleClick = () => {
+  const handlePathClick = () => {
     setIsEditingPath(true);
   };
 
@@ -24,7 +24,7 @@ function RouteSet() {
     }
   };
 
-  const handleDescriptionDoubleClick = () => {
+  const handleDescriptionClick = () => {
     setIsEditingDescription(true);
   };
 
@@ -66,26 +66,20 @@ function RouteSet() {
                   </div>
                   <div className="div-28">
                     <div className="div-29">Path</div>
-                    <div className="div-30">{path}
-                     <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1fcfa47ae4c71a71bd9eb656168e957868fa01e334114bdb862d484c675d2ae?apiKey=c88477001710423a80b4a3ad8ecfeb73&"
-                        className="add"
-                        onClick={toggleDropdown}
-                      />
-                      {dropdownVisible && (
-              <div className="dropdown-menu-path">
-                <div className="dropdown-item" onClick={() => setPath("/path1")}>/path1</div>
-                <div className="dropdown-item" onClick={() => setPath("/path2")}>/path2</div>
-                <div className="dropdown-item" onClick={() => setPath("/path3")}>/path3</div>
-              </div>
-            )}
+                     <div className={`div-30 ${isEditingPath ? 'editable' : ''}`}
+                      onClick={handlePathClick}
+                      onBlur={handlePathBlur}
+                      onKeyDown={handlePathKeyDown}
+                      contentEditable={isEditingPath}
+                      suppressContentEditableWarning={true} // Suppress React warning
+                    >
+                      {path}
                     </div>
                   </div>
                   <div className="div-31">
                     <div className="div-32">Description</div>
                     <div className={`div-33 ${isEditingDescription ? 'editable' : ''}`}
-            onDoubleClick={handleDescriptionDoubleClick}
+            onClick={handleDescriptionClick}
             onBlur={handleDescriptionBlur}
             onKeyDown={handleDescriptionKeyDown}
             contentEditable={isEditingDescription}

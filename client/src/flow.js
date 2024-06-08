@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import './flow.css';
 
 function Flow() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <div className="flow">
-      <div className="textArea" contentEditable="true"></div>
-      {/* <div className="div-35">Start</div> */}
-                    {/* <div className="div-36">
+      <div className="div-35">Start</div>
+                    <div className="div-36">
                       <div className="div-37">
                         <div className="div-38">var</div>
                         <img
@@ -62,6 +67,11 @@ function Flow() {
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1fcfa47ae4c71a71bd9eb656168e957868fa01e334114bdb862d484c675d2ae?apiKey=c88477001710423a80b4a3ad8ecfeb73&"
                         className="img-6"
                       />
+                          {/* {dropdownVisible && (
+              <div className="dropdown-menu">
+              </div>
+            )} */}
+
                     </div>
                     <div className="div-56">
                       <div className="div-57">Add Step</div>
@@ -71,7 +81,7 @@ function Flow() {
                         className="img-7"
                       />
                     </div>
-                    <div className="div-58">End</div> */}
+                    <div className="div-58">End</div>
                   </div>
   );
 }
